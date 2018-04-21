@@ -1,0 +1,17 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      <section id="about">
+        <div class="container">
+        <div class="avatar">
+          <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
+        </div>
+	<h3>I'm <strong>{{ .Site.Params.author }}</strong>, a free Unix and Unix-like variants enthusiast.</h3>
+	<h3>Fueled by the open source community, I love sharing.</h3>
+	<h3>You too ? let's get in touch.</h3>
+        {{ partial "social.html" . }}
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
